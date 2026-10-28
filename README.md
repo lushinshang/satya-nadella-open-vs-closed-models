@@ -5,6 +5,7 @@ Microsoft 執行長 Satya Nadella 在 20VC with Harry Stebbings 的訪談導讀�
 - 狀態：已發布（GitHub Pages）
 - 正式網址：https://lushinshang.github.io/satya-nadella-open-vs-closed-models/
 - 發布日期：2026-10-29
+- 更新：2026-10-29 加入封面插畫與社群預覽圖，總編輯潤稿，補充音訊交叉比對範圍的說明
 - 資料截至：2026-10-29
 - 原影片：[Satya Nadella on Open vs Closed Models: Who Wins | Why Companies Need to Own Their Own Intelligence](https://www.youtube.com/watch?v=24XUcWhqY_4)（20VC with Harry Stebbings，2026-10-26 上傳）
 
@@ -20,10 +21,11 @@ Microsoft 執行長 Satya Nadella 在 20VC with Harry Stebbings 的訪談導讀�
 | `satya-nadella-open-vs-closed-models.md` | 導讀 Markdown 原稿 |
 | `translation-zh.html` | 全文繁中譯文（機器翻譯，非官方） |
 | `player.html` | 中英雙語同步字幕播放器 |
+| `images/` | 封面插畫（`hero-16x9.webp`、`hero-9x16.webp`）與社群預覽圖 `og-hero.jpg` |
 
 ## 製作說明
 
-導讀的分析、撰稿、翻譯、查證與審稿皆由 AI 模型完成，不是人類分析，也沒有經過人工逐句校稿：主控與撰稿為 Claude Sonnet 5.5；字幕翻譯由 Gemini 3.8 Flash 與 OpenAI Codex 完成，再由 Claude Sonnet 5.5 修詞；字幕完整讀取使用 Gemini 4 Argon；重要說法的查證使用 Gemini 3.8 Flash、OpenAI Codex 與 Claude Code；事實與編輯審稿由另外兩位 Claude Sonnet 5.5 完成。依據的是 YouTube 機器自動字幕，沒有逐句對照原音，個別字句以影片為準。本導讀沒有生成圖片。
+導讀的分析、撰稿、翻譯、查證、審稿與插圖皆由 AI 模型完成，不是人類分析，也沒有經過人工逐句校稿：主控與撰稿為 Claude Sonnet 5.5；字幕翻譯由 Gemini 3.8 Flash 與 OpenAI Codex 完成，再由 Claude Sonnet 5.5 修詞；字幕完整讀取使用 Gemini 4 Argon；重要說法的查證使用 Gemini 3.8 Flash、OpenAI Codex 與 Claude Code；事實與編輯審稿由另外兩位 Claude Sonnet 5.5 完成，最後由一位 Claude Opus 依總編輯準則潤稿並標示重點；封面插畫由 OpenAI Codex 的 imagegen 製作（圖內沒有文字），社群預覽圖是影片畫面的截圖裁切。依據的是 YouTube 機器自動字幕，約 04:40–07:05、08:00–08:50、12:00–12:20、13:00–13:30、21:30–22:10 曾用音訊轉寫交叉比對，其餘沒有逐句對照原音，個別字句以影片為準。
 
 影片、字幕與其中的說法版權屬原頻道與原講者，譯文頁與播放器僅供閱讀與研究，若權利人要求，會立即下架。
 
