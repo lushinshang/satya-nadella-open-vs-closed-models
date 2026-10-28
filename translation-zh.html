@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230f7b6c%27/%3E%3Cpath d=%27M12 46 26 30l8 8 18-22%27 stroke=%27white%27 stroke-width=%277%27 fill=%27none%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+<title>Satya Nadella 20VC 訪談全文譯本（非官方）</title>
+<meta name="description" content="〈Satya Nadella on Open vs Closed Models: Who Wins | Why Companies Need to Own Their Own Intelligence〉（20VC with Harry Stebbings，2026-10-26 上傳）全文繁體中文譯本，採台灣用語；非官方翻譯（AI 模型翻譯與審校）。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="Satya Nadella 20VC 訪談全文譯本（非官方）">
+<meta property="og:description" content="〈Satya Nadella on Open vs Closed Models: Who Wins | Why Companies Need to Own Their Own Intelligence〉（20VC with Harry Stebbings，2026-10-26 上傳）全文繁體中文譯本，採台灣用語；非官方翻譯（AI 模型翻譯與審校）。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Satya Nadella 20VC 訪談全文譯本（非官方）">
+<meta name="twitter:description" content="〈Satya Nadella on Open vs Closed Models: Who Wins | Why Companies Need to Own Their Own Intelligence〉（20VC with Harry Stebbings，2026-10-26 上傳）全文繁體中文譯本，採台灣用語；非官方翻譯（AI 模型翻譯與審校）。">
+<meta property="og:url" content="https://lushinshang.github.io/satya-nadella-open-vs-closed-models/translation-zh.html">
+<style>
+:root{
+  --bg:#f9f7f4; --surface:#fffdf9; --ink:#1a1a1a; --muted:#5f5b54; --line:#e4dfd6;
+  --accent:#0f7b6c; --accent-ink:#0b5c51; --note:#f0ebe1; --code:#ece6d8; --link:#1f5f99;
+  --card:#fff6e8; --card-line:#e8c99a; --shadow:0 6px 24px rgba(40,30,10,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1b1a18; --surface:#26241f; --ink:#ece8de; --muted:#aaa497; --line:#3a3730;
+    --accent:#4fc1ad; --accent-ink:#7fd6c6; --note:#2f2c25; --code:#33302a; --link:#8fbde8;
+    --card:#2d2820; --card-line:#5b4a30; --shadow:0 6px 24px rgba(0,0,0,.35);}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);overflow-x:hidden;
+  font:17px/1.7 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;letter-spacing:0}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:8px 14px;z-index:300}
+.skip:focus{left:8px;top:8px}
+nav.toc{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.toc ul{list-style:none;margin:0 auto;padding:0 16px;max-width:1120px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;
+  white-space:nowrap;-webkit-overflow-scrolling:touch;min-height:52px;align-items:center}
+nav.toc ul::-webkit-scrollbar{display:none}
+nav.toc a{display:inline-block;padding:8px 12px;border-radius:999px;color:var(--muted);text-decoration:none;font-size:14px;min-height:36px}
+nav.toc a:hover,nav.toc a:focus-visible{background:var(--note);color:var(--ink)}
+a{color:var(--link);overflow-wrap:anywhere}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.page{max-width:1120px;margin:0 auto;padding:0 20px 80px}
+header.hero{padding:56px 0 8px;text-align:center}
+.eyebrow{margin:0 0 8px;color:var(--accent-ink);font-weight:700;letter-spacing:0;font-size:14px}
+h1{margin:0 auto 14px;max-width:820px;font-size:clamp(1.7rem,1.2rem + 2vw,2.6rem);line-height:1.3;text-wrap:balance}
+.byline{margin:0 0 6px;color:var(--muted);font-size:14px}
+.video-link{margin:0 0 28px;font-size:14px}
+figure{margin:32px 0}
+figure img{display:block;width:100%;height:auto;aspect-ratio:var(--ar-d,16/9);object-fit:contain;border-radius:12px;
+  box-shadow:var(--shadow);background:var(--surface);cursor:zoom-in}
+@media (max-width:640px){figure picture img{aspect-ratio:var(--ar-m,9/16)}}
+@media (max-width:640px){figure.hero-figure picture img{max-width:300px;margin:0 auto}}
+figure.hero-figure{max-width:720px;margin-left:auto;margin-right:auto}
+hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+p.figcap{margin:-18px auto 1.4em;text-align:center;font-size:14px;color:var(--muted)}
+figcaption{margin:10px auto 0;max-width:720px;font-size:14px;line-height:1.55;color:var(--muted);text-align:center}
+article{max-width:720px;margin:0 auto}
+article figure.section-figure{margin-left:50%;transform:translateX(-50%);width:min(860px,calc(100vw - 32px))}
+h2{margin:56px 0 12px;font-size:1.55rem;line-height:1.4;scroll-margin-top:72px;text-wrap:balance;
+  border-left:5px solid var(--accent);padding-left:14px;margin-left:-19px}
+h3{margin:36px 0 8px;font-size:1.2rem;line-height:1.45}
+p{margin:0 0 1.1em}
+ul,ol{margin:0 0 1.2em;padding-left:1.4em}
+li{margin:.35em 0}
+strong{font-weight:700}
+code{background:var(--code);padding:.1em .4em;border-radius:5px;font:0.9em ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-word}
+section.summary-card{background:var(--card);border:1px solid var(--card-line);border-radius:14px;padding:6px 22px 10px;margin:24px 0 8px;box-shadow:var(--shadow)}
+section.summary-card h2{margin:14px 0 8px;font-size:1.2rem;border-left:0;padding-left:0;margin-left:0}
+section.summary-card p{margin:0 0 .8em;font-size:16.5px}
+ol.takeaways{padding-left:1.6em}
+ol.takeaways li{margin:.8em 0;padding-left:.2em}
+ol.takeaways li::marker{color:var(--accent-ink);font-weight:700}
+ul.sources li{overflow-wrap:anywhere}
+aside.note{background:var(--note);border-left:4px solid var(--accent);border-radius:8px;padding:12px 16px;margin:0 0 1.6em;font-size:15px;color:var(--ink)}
+aside.note p,aside.note ul{margin:0 0 .6em}
+aside.note ul{padding-left:1.3em}
+figure.diagram{margin:28px 0}
+.mermaid-scroll{overflow-x:auto;max-width:100%;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;-webkit-overflow-scrolling:touch}
+.mermaid-scroll pre{margin:0;font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre;color:var(--ink)}
+.mermaid-scroll svg{display:block;margin:0 auto;height:auto;max-width:100%}
+.table-scroll{overflow-x:auto;margin:0 0 1.6em;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.table-scroll table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px;line-height:1.55}
+.table-scroll th,.table-scroll td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.table-scroll th{background:var(--note);font-weight:700}
+.table-scroll tr:last-child td{border-bottom:0}
+.table-scroll td.k{font-weight:600;white-space:nowrap}
+.table-scroll td.nw{white-space:nowrap}
+.table-scroll.wide{margin-left:50%;transform:translateX(-50%);width:min(1040px,calc(100vw - 32px))}
+@media (max-width:640px){.table-scroll.wide{margin-left:0;transform:none;width:auto}}
+@media (max-width:640px){
+  .table-scroll{overflow-x:visible}
+  .table-scroll table{min-width:0}
+  .table-scroll thead{position:absolute;left:-9999px}
+  .table-scroll tr,.table-scroll td{display:block}
+  .table-scroll tr{padding:10px 12px;border-bottom:1px solid var(--line)}
+  .table-scroll tr:last-child{border-bottom:0}
+  .table-scroll td{padding:2px 0;border:0}
+  .table-scroll td.k{color:var(--accent-ink);white-space:normal}
+  .table-scroll td.nw{white-space:normal}
+  .table-scroll td::before{content:attr(data-label) "：";font-weight:700;color:var(--muted);font-size:13px}
+}
+
+p.lede{margin:0 auto 10px;max-width:760px;color:var(--muted);font-size:16px;line-height:1.65}
+footer{max-width:720px;margin:64px auto 0;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.lightbox{display:none;position:fixed;inset:0;z-index:200;background:rgba(20,18,14,.9);align-items:center;justify-content:center;padding:24px}
+.lightbox.is-open{display:flex}
+.lightbox img{max-width:96vw;max-height:90vh;width:auto;height:auto;border-radius:8px;box-shadow:0 12px 48px rgba(0,0,0,.5);background:#fff}
+.lightbox button{position:absolute;top:14px;right:14px;min-width:44px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;
+  background:#fff;color:#222;font-size:15px;cursor:pointer}
+@media (max-width:760px){
+  h2{margin-left:0;border-left:0;padding-left:0;border-top:3px solid var(--accent);padding-top:10px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .page{padding:0 16px 64px}
+  header.hero{padding-top:36px}
+  h2{font-size:1.35rem}
+  section.summary-card{padding:4px 16px 8px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<nav class="toc" aria-label="章節導覽"><ul><li><a href="#sec-1" title="章節 1：開場（00:00）">1·00:00</a></li><li><a href="#sec-2" title="章節 2：假設模型已遭入侵（01:23）">2·01:23</a></li><li><a href="#sec-3" title="章節 3：AI 需要零信任架構（02:01）">3·02:01</a></li><li><a href="#sec-4" title="章節 4：為什麼思維鏈不可靠（04:45）">4·04:45</a></li><li><a href="#sec-5" title="章節 5：開放權重會因透明而勝出嗎？（05:41）">5·05:41</a></li><li><a href="#sec-6" title="章節 6：開放 vs 封閉：流量往哪走？（07:04）">6·07:04</a></li><li><a href="#sec-7" title="章節 7：企業要擁有自己的智慧（09:06）">7·09:06</a></li><li><a href="#sec-8" title="章節 8：私有評測是最有價值的 IP（10:43）">8·10:43</a></li><li><a href="#sec-9" title="章節 9：AI 催生新的導入經濟（12:16）">9·12:16</a></li><li><a href="#sec-10" title="章節 10：AI 需要全端垂直整合嗎？（14:11）">10·14:11</a></li><li><a href="#sec-11" title="章節 11：推論需求比預期大（15:52）">11·15:52</a></li><li><a href="#sec-12" title="章節 12：撐得起千億美元訓練嗎？（16:00）">12·16:00</a></li><li><a href="#sec-13" title="章節 13：AI 能拉高全球 GDP 嗎？（17:54）">13·17:54</a></li><li><a href="#sec-14" title="章節 14：哪些產業生產力提升最大？（19:09）">14·19:09</a></li><li><a href="#sec-15" title="章節 15：對齊不會自然出現（21:34）">15·21:34</a></li><li><a href="#sec-16" title="章節 16：每家企業都是 AI 基準（22:10）">16·22:10</a></li><li><a href="#sec-17" title="章節 17：下個十年最期待什麼（22:36）">17·22:36</a></li></ul></nav>
+<div class="page">
+<header class="hero">
+<p class="eyebrow">全文譯本（非官方）</p>
+<h1>Satya Nadella 20VC 訪談全文譯本（非官方）</h1>
+<p class="lede">20VC with Harry Stebbings，2026-10-26 上傳</p>
+<p class="byline">原文：20VC with Harry Stebbings，2026-10-26　譯本整理：2026-10-29</p>
+</header>
+<main id="main"><article>
+<aside class="note"><p>本譯文由 AI 模型依 YouTube 機器自動字幕翻譯並審校，不是人類翻譯，也沒有經過人工校稿或對照原音；字幕沒有說話者標記，本頁不標說話者。原影片版權屬原頻道，僅供閱讀與研究，若有出入以影片為準。</p></aside>
+<p>原影片：<a href="https://www.youtube.com/watch?v=24XUcWhqY_4" target="_blank" rel="noopener noreferrer">Satya Nadella on Open vs Closed Models: Who Wins | Why Companies Need to Own Their Own Intelligence</a>。對應的<a href="index.html">深度導讀</a>與<a href="player.html">雙語同步播放器</a>另附。</p>
+<hr>
+<h2 id="sec-1">章節 1：開場（00:00）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=0s" target="_blank" rel="noopener noreferrer">00:00</a> 而達里奧、伊利亞、山姆、格雷格與伊隆，我想那時大家都是和樂融融的一家人。他們真的是擴展定律的信奉者，而這也是我早在 2018、2019 年時所深信不疑的。我想我現在最大的改變是，我過去總是認為對齊會自然跟著出現。我不再相信這一點了。老實說，這集節目對我而言相當令人百感交集。我是在倫敦的臥室裡創辦了 20VC。那時我才 18 歲。我身無分文。我的電話簿裡也沒有任何人脈。而今天，我有機會與過去三、四十年來最偉大的企業之一——微軟的執行長薩蒂亞・納德拉坐下來對談。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=35s" target="_blank" rel="noopener noreferrer">00:35</a> 關於納德拉，我只想說，他在這麼短的時間內為這場訪談注入的溫暖，幾乎是我以前從未見過的。他論點與想法的清晰度，以及他能夠非常迅速深入核心的能力。這幾乎是我以往未曾見過的。這將是我會永遠銘記的一集節目，我真的非常希望你們會喜歡。準備好開始了嗎？［音樂］</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=70s" target="_blank" rel="noopener noreferrer">01:10</a> 納德拉，非常感謝你與我們進行這場訪談。我想說感謝你來到攝影棚，但實際上是你在此接待了我們。所以，真的很感激你抽空前來。非常感謝你邀請我上節目，哈利。這場會面期待已久，我很高興我們終於能夠成行。</p>
+<h2 id="sec-2">章節 2：假設模型已遭入侵（01:23）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=83s" target="_blank" rel="noopener noreferrer">01:23</a> 你大約 10 天前寫了一篇很有分量的文章，你說我們應該假設模型已經遭到入侵。我想就這點進一步深入探討。這是否意味著我們不能、或不應該仰賴模型供應商公司的資訊揭露？不，我想就我目前所見，挑戰在於模型的能力正變得越來越強大，對吧？擴展定律正在發揮作用。只不過，我過去的假設之一是，對齊會隨著規模擴展自然跟著出現，但現在看來並非如此。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=115s" target="_blank" rel="noopener noreferrer">01:55</a> 那裡還有更多科學上的挑戰需要去解決，對吧？而且機制性理解也依然難以捉摸。</p>
+<h2 id="sec-3">章節 3：AI 需要零信任架構（02:01）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=121s" target="_blank" rel="noopener noreferrer">02:01</a> 因此我認為，如果你想繼續使用這些複雜的模型，最好的姿態是把它們放進一個信任架構裡來對待。畢竟，零信任並不是什麼新鮮事，對吧？我們一直都有零信任架構的做法。所以，至少我所主張的是，讓我們打造一個經過工程設計的零信任 環境，能夠在任何功能失常的代理（agent）造成任何危害之前將其圍堵，對吧？所以，這就是重點所在。因為如果你真的想要擁有能力更強、但對齊程度卻較低的代理，那麼你就必須擁有一個可以信賴的信任系統。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=158s" target="_blank" rel="noopener noreferrer">02:38</a> 我想請問，那樣的信任系統長什麼樣子？誰是它的架構設計者？誰又是它的仲裁者？這是一個很好的切入點。所以我才會這樣看，先把 AI 安全擺在這個架構之外，對吧？因為舉例來說，至少我的看法是對齊主要必須在訓練中體現出來，對吧？事實上，甚至可能是在預訓練中。我不認為你光靠強化學習（RL）就能一路達到對齊。你必須真正讓對齊成為在最一開始就真正嵌入在權重當中的東西。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=189s" target="_blank" rel="noopener noreferrer">03:09</a> 所以，模型本身有望在某個時間點達成對齊。因此，如果先把 AI 安全放在一旁，那麼信任架構就只會是像微軟這樣的公司或所有資安人員所做的事情。例如，我們所做的就是打造了這兩樣東西，對吧？Agent 365 與 Perception，對吧？它具體做了什麼？它為每個代理賦予一個身分識別。接著它會記錄該代理的所有活動、所有的工具呼叫，事實上包括每一次的模型呼叫以及其中的思維鏈（chain of thought）。事實上，這也是為什麼我要求所有的思維鏈最好都是英文，而不是 neuralese。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=222s" target="_blank" rel="noopener noreferrer">03:42</a> 然後你就可以使用多個模型來進行檢查。它最好具備防竄改能力，對吧？你不能讓代理去修改自己的日誌記錄。接著在此基礎之上，你設定政策。然後你針對代理的活動進行行為監控，確保它們符合政策規範。這就是整個架構。我們今天尚未擁有那樣的架構。這是否象徵著我們在發展進程中所處的位置？存在的。所以我認為人們混淆了我所謂用於圍堵的工程化資安零信任架構系統與 AI 安全這兩件事。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=258s" target="_blank" rel="noopener noreferrer">04:18</a> 對吧？因為我認為人們會說：「嗯，AI 安全很困難、難以捉摸，而且尚未達成。所以，我們在資安方面肯定無能為力。」而我並不是說這兩件事必須同時並進到位。事實上，我只想說：「嘿，我們必須面對現有的實際狀況。所以，讓我們在模型外部建立一個信任系統，然後非常積極地設定政策，並監控是否有任何偏離政策的行為。</p>
+<h2 id="sec-4">章節 4：為什麼思維鏈不可靠（04:45）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=285s" target="_blank" rel="noopener noreferrer">04:45</a> 在監控方面，如果我們考慮到思維鏈，它的可靠性有多高？它並不高，對吧？我們知道思維鏈本身可能並不忠實，事實上，當模型公司說「嗯，它不忠實，所以我打算把它隱藏起來」時，情況甚至可能變得更糟。［笑聲］ 於是問題變得更棘手。這就是為什麼我認為需要推動某種程度的標準化，並且至少讓受信任的合作夥伴能夠原樣取得思維鏈，使其具備可檢驗性、</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=316s" target="_blank" rel="noopener noreferrer">05:16</a> 具備可稽核性，而且我可以使用多個模型等工具來進行檢查，對吧？所以，這將會是其中之一；事實上，老實說，這甚至是可能帶動更多開放權重發展的因素之一，因為如果你無法信任——這很有趣。封閉權重模型比較強大，但如果它們沒有意識到需要 更加透明，特別是在受信任的合作夥伴使用它們時，那麼我們可能就會遇上問題。</p>
+<h2 id="sec-5">章節 5：開放權重會因透明而勝出嗎？（05:41）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=341s" target="_blank" rel="noopener noreferrer">05:41</a> 我想請問你，當我們思考開源的崛起時，我完全同意你所說的封閉模型更為強大，而開源則主要仍由中國模型主導。那麼，當我們考量到安全已被融入預訓練中、考量到我們剛才提到的資訊揭露，再對照大多數開源皆為中國模型時，這是否會令人擔憂？是的，我的意思是，我認為這要分成兩方面來看。我確實相信，退一步來看，AI 安全的缺失對中國不是好事，對美國不是好事，對英國也同樣不是好事。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=372s" target="_blank" rel="noopener noreferrer">06:12</a> 所以我認為這是大家共同的事，因為一個未對齊的中國開放權重模型，很可能連中國自己都會攻擊。所以你不能放心地認為，它只會被當成攻擊手段來用。因此拋開這點不談，我對西方正在取得的一些進展感到相當欣慰，包括開放權重模型，而且你知道的，黃仁勳（Jensen）顯然正在為此努力，其他人也正在投入。我們的 MAI 模型也不會是開放權重。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=402s" target="_blank" rel="noopener noreferrer">06:42</a> 我認為比較像是授權權重（licensed weights）。不妨這樣理解。我想把它做成單純直接的軟體生意，而不是靠網路效應的智慧生意。所以我認為將會出現不同的商業模式，而我最終相信，你使用與控制這些模型的能力，才是決定哪種模型會被採用的關鍵。</p>
+<h2 id="sec-6">章節 6：開放 vs 封閉：流量往哪走？（07:04）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=425s" target="_blank" rel="noopener noreferrer">07:05</a> 身為創投投資人，我如今必須預測流量在封閉與開放之間會流向何方。當你思考流量與金錢這兩個不同維度時，如果我們展望未來 24 個月，你認為開放與封閉各會佔多少比例的流量？這是個好問題。我想這取決於前沿呈現何種面貌，對吧？也就是說，我認為大部分的事物似乎都會趨於飽和，而當它達到飽和時，開放權重，甚至是封閉權重中更便宜的模型，似乎就足堪大任，</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=457s" target="_blank" rel="noopener noreferrer">07:37</a> 因為特別有一點是，如果你能在自己的軌跡（trace）上進行訓練，那麼如果問題本身沒有改變，你真的不需要最新的模型來解決同一個問題，對吧？所以如果你有想要持續推進的評測（eval），那麼你可能願意付費。順便一提，即便在那方面，我對我們現在放在 GitHub 上的 HydraFusion 也感到非常興奮，你知道 這個。是的，因為那裡最酷的一點是，它是個學習型模型，它知道——總之我們現在正走向這些代理群，以及多個子代理。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=493s" target="_blank" rel="noopener noreferrer">08:13</a> 所以我可以呼叫許多子代理，這些子代理甚至恰好是本機模型。因此我想我的推測是，前沿模型永遠都會有其市場。總會有一些新的事物出現。科學也許就是前沿所立足的下一個領域。但我認為大部分的 token 使用量都會是商品化的 token 使用量。這是否意味著絕大多數會是開源？這也許會是開放權重，或者正如我所說的，它也可以是廉價的封閉權重，對吧？因為將會出現大量的價格競爭。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=523s" target="_blank" rel="noopener noreferrer">08:43</a> 讓我這樣說，對吧？因為如果你看我自己在 Copilot 裡的用法，我們大量搭配使用閉源的便宜模型，以及開放權重模型。你談到，對你那些很了不起的客戶來說，擁有自己的智慧很重要。你談到了一些在英國的客戶。這就是接下來的模型環境嗎？企業用自己的資料打造的專門智慧。</p>
+<h2 id="sec-7">章節 7：企業要擁有自己的智慧（09:06）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=547s" target="_blank" rel="noopener noreferrer">09:07</a> 是的，所以我想這對我而言是最重要的事情之一，對吧？也就是在智慧時代裡，企業的未來是什麼，對吧？因為即便回溯到海耶克，他對經濟的基本描述就是在地智慧。隱性知識分布於整個經濟體系之中，對吧？如果沒有這點，不可能只有一家企業，也不可能只有一種智慧。所以這可以說是最根本的基石。事實上，資本主義正是因此而得以運作。價格發現正是因此而發揮功能。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=578s" target="_blank" rel="noopener noreferrer">09:38</a> 或者說定價機制正是因此而運作。因此，我認為每家企業能夠利用 AI 以日益擴大的規模累積知識，而不是外洩知識，這將至關重要。這就是為什麼我稱之為逆向資訊悖論，對吧？也就是說，肯尼斯・阿羅曾描述過這種資訊悖論，如果你是賣方，在沒有專利、營業秘密保護或著作權保護的情況下揭露了秘密，你就外洩了價值。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=609s" target="_blank" rel="noopener noreferrer">10:09</a> 現在買方首次需要這種保護，因為買方——即便如你所知，大多數人認為這只是「喔，我的資料」，它甚至是使用時產生的副產物資料，對吧？比讚、倒讚的訊號回饋，對吧？你是在替模型公司創造價值，還是替自己把價值留下來。所以我想至少我所主張的事情之一是，為了讓 這個體系維持穩定，透過使用智慧所創造的剩餘價值，必須有更多保留在企業內部。</p>
+<h2 id="sec-8">章節 8：私有評測是最有價值的 IP（10:43）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=643s" target="_blank" rel="noopener noreferrer">10:43</a> 順帶一提，這不一定只能靠把你的知識嵌進權重來做到。它可以存在於上下文當中。它可以存在於你的評測當中，對吧？你可能擁有基準。事實上，我非常熱衷的事情之一是我們都會成為——每家企業都將擁有一個私有評測（eval）基準，這就是他們的核心 IP。而每個模型都會加入進來，並試圖在那項評測上進行爬坡式優化（hill climb）。而對我來說，這就是一家企業的運作之道。我非常喜歡為每家公司建立私有評測基準這個想法。這似乎只適用於極少數頂尖的公司。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=676s" target="_blank" rel="noopener noreferrer">11:16</a> 像是 Harvey 或 Legora，或是那類極具前瞻思維的 AI 公司。這會擴散到世界上所有的公司嗎？你提到了你的 會發生的。是的，會的，哈利，一直都是這樣，對吧？也就是說，你知道，我記得在 80 年代末和 90 年代初曾有那麼一段時期，少數部署了個人電腦（PC）並正在進行 ［笑聲］ 預測的公司，那時感覺就像魔法一樣神奇。他們能夠輸入到 Excel 試算表，透過電子郵件發送，避開傳真機與辦公室內部備忘錄。當時感覺就像是「哇，這什麼時候才會普及？」</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=707s" target="_blank" rel="noopener noreferrer">11:47</a> 而這大概花了 10 年的時間，隨後便全面普及擴散開來。這一次，被當成稀奇的是「喔，我是 AI 原生公司，我在做這個」。我想五年後這會相當老套了，我想像是這樣。這也就是我的意思，這些科技週期總是這樣開始的，對吧？連雲端也是如此。還記得雲端剛起步時，大家最關注的大事就是「喔，誰是雲端原生，誰不是？」如果你不是雲端原生的話。而現在每個人都是了，對吧？連勞埃德（Lloyds）——大概有 500 年歷史吧——都是雲端原生了。事情就是這樣發展的。</p>
+<h2 id="sec-9">章節 9：AI 催生新的導入經濟（12:16）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=736s" target="_blank" rel="noopener noreferrer">12:16</a> 那我們是否會邁入導入經濟？因為當我們考慮到這些客戶，就像你說的你們一些非常大型的客戶，他們將會需要大量 FDE（前線部署工程師）的支援，遠遠超過過去 10 年傳統時期的需求。我們是否會迎來非常繁重的導入經濟，來協助既有客戶轉型進入—— 是的，這很有趣，像是導入經濟，系統整合商其實一直都存在，對吧？在許多其他技術的擴散普及上，我們一直都仰賴導入經濟。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=767s" target="_blank" rel="noopener noreferrer">12:47</a> 所以這一次我認為有著不同的輪廓，對吧？因為如果可以這麼說的話，它是技術與商業的結合。它有點像是，但它不是傳統的管理顧問，不是傳統的系統整合，也不是傳統的那種技術支援。它比較像是，舉例來說，想想看這個，對吧？你想要開始，就像當我檢視我們的 FDE 合作案時，對吧？甚至以我今天在主題演講中提到的聯合利華為例。這非常引人入勝。他們建立了一套代理（agent）式系統，說：「嘿，我們真的要利用代理式系統將訂單到收款（order to cash）自動化。」再加上他們的貿易索賠。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=799s" target="_blank" rel="noopener noreferrer">13:19</a> 順便提一下，他們一開始是使用前沿模型，然後進行替換，事實上我想他們目前所有的貿易索賠都是使用 MAI 模型，因為它的成本較低，而且順便說一句，是由他們自己掌控的，對吧？因為他們能夠利用自己的軌跡（trace）進行訓練。所以我們派駐了一些 FDE 進行部署，而現在他們自己的 IT 團隊就能管理這一切了。但這一切都始於：商業模式是什麼、評測（eval）是什麼、構思代理式架構的方法是什麼。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=831s" target="_blank" rel="noopener noreferrer">13:51</a> 所以這算是商業顧問結合技術顧問，而且我認為是的，你說得對，生態系中將會建立起一套全新的技能。今天我認為我們所有人都有所謂「自己的 FDE」，但 FDE 將會變得像是，傳統的系統整合將會成為新的 FDE。</p>
+<h2 id="sec-10">章節 10：AI 需要全端垂直整合嗎？（14:11）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=851s" target="_blank" rel="noopener noreferrer">14:11</a> 你顯然提到了很多次 MIA。M-A-I。是的。M-I-A。是的。天啊。但是當我們看著許多不同的參與者時，都有這種體悟：你必須從晶片、模型到應用層做到全端。那是未來嗎？你必須擁有垂直整合的所有權。那又意味著什麼？是的，這完全取決於產業結構，對吧？我想我會說在今天，誰知道呢，大概有 5、6 個開放權重模型、封閉模型都在競爭，也許 5 個、</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=883s" target="_blank" rel="noopener noreferrer">14:43</a> 6 個開放權重模型都在競爭，因此在某種程度上，如果你正在建立像代理式系統這樣的應用，你甚至可以擁有像我所說的東西，也就是內建決策引擎的路由器，然後直接路由到給定任務的最佳模型。所以這是一種可能性。當然，始終存在一種風險，那就是可能會有一個一路涵蓋應用層、晶片與系統的垂直整合模型。對我來說這不太可能，對吧？我曾經在某個時刻認為情況可能會是那樣，只會有一家。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=915s" target="_blank" rel="noopener noreferrer">15:15</a> 如果真要說的話，現在情況正好相反，每天醒來你都會驚呼技術棧的每一層競爭都更加激烈，無論是在晶片層、無論是在管理晶片的系統層、在模型層，還是在應用層。所以我認為這是一個健康的發展方向，但世事難料，對吧？因為這完全取決於什麼會成為主導架構。但我的希望是這會演變成一種水平專業化，每一層都有多個贏家，然後讓人們有能力進行組合構建。</p>
+<h2 id="sec-11">章節 11：推論需求比預期大（15:52）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=952s" target="_blank" rel="noopener noreferrer">15:52</a> 我之前沒看清的是每一層的深度。就像我現在知道、但真希望自己 12 個月前就知道的，是推論那幾乎無窮無盡的需求。是的，說得好。［笑聲］</p>
+<h2 id="sec-12">章節 12：撐得起千億美元訓練嗎？（16:00）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=960s" target="_blank" rel="noopener noreferrer">16:00</a> 我真希望自己在 12 個月前就知道，那我投資的作法就會大不相同了。說到這個，像是穆斯塔法・蘇萊曼曾說過，千億美元等級的訓練即將到來，而且只有少數幾家實驗室能負擔得起。千億美元等級的訓練。我們是否有足夠的能源基礎設施和電力來支援整個技術棧達到這種規模，尤其是當我們—— 是的，我的看法是，歸根結底這必須來自全球 GDP 出現轉折向上，然後這才能讓公司以研發費用的一定百分比來支應，對吧？</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=996s" target="_blank" rel="noopener noreferrer">16:36</a> 因為當有人提到訓練時，那不過就是研發費用的一部分，對吧？那些高研發支出的公司會花多少？15%、20% 在研發上？因此是的，在某個時間點如果你有足夠的營收，你就能在訓練上投入足夠的資金。當然，如果你對全球經濟成長有所貢獻，你就會有足夠的營收，可以說從中分得應得的份額。然後你也提到了另一面，也就是供應端，我們今天面臨電力短缺、晶片短缺以及各種各樣的問題。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1029s" target="_blank" rel="noopener noreferrer">17:09</a> 它們全都是前置時間很長的項目，對吧？你不可能彈一下手指就憑空擁有發電容量，或者蓋好一座新的晶圓廠。所以現在有趣的是，鑑於這樣龐大的需求，大家都在大興土木建設。那麼問題在於這一切何時能正式上線投產？供需狀況又會是如何？沒有人知道，對吧？老實說，今天坐在這裡的我們任何人都只是在推測。但我的感覺是，如果你一開始先假設穩定狀態會跟今天一樣，對吧？損益表不會突然就變得完全不一樣，對吧？</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1059s" target="_blank" rel="noopener noreferrer">17:39</a> 對一家公司而言。它依然會是：「嘿，我有一些營收。我有一些營業成本，而且我必須獲得一些利潤。」如果這將成真，那麼問題在於全球 GDP 的成長率會是多少？對我來說那是更重大的問題。</p>
+<h2 id="sec-13">章節 13：AI 能拉高全球 GDP 嗎？（17:54）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1074s" target="_blank" rel="noopener noreferrer">17:54</a> 就 GDP 成長率的推升而言，全球在非常長的一段時間裡基本上穩定在每年 2%。AI 是否有能力在短時間內大幅拉高這個數字？我認為是的。而且我也多少抱持這樣的希望。因為重點就在這裡，對吧？當我審視這一點時，舉例來說，我們在醫療保健上支出的金錢占了我們任何國家 GDP 的相當比例，對吧？這就是為什麼連看到 Copilot 在英國國民保健署（NHS）的部署時，我也會驚嘆：「哇，如果它能改善病患的治療成效並降低醫療成本，根據定義，這就是在幫助英國的 GDP。」</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1115s" target="_blank" rel="noopener noreferrer">18:35</a> 嗯。所以，我認為經濟體系中存在著這些成熟適合採用 AI 的領域，而且事實上，那裡的排擠取代最少，獲得的效益卻最大。所以，我認為那正是我們必須找到最佳契合點的地方。軟體開發是另一個領域，對吧？看到軟體開發的需求彈性有多大，真的很令人著迷，對吧？這意味著 IT 積壓的工作量非常龐大，而我們所有人甚至都沒意識到這一點。</p>
+<h2 id="sec-14">章節 14：哪些產業生產力提升最大？（19:09）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1149s" target="_blank" rel="noopener noreferrer">19:09</a> 事實上，曾有人告訴我，在創投領域要勝出，你必須是市場上的前 1、2 名。我們投資了 Foundry，它排名第 5，但它正在勝出。第 5 名？是的。這打破了創投的所有規則。我的問題是，又有點調皮、不在原定流程裡，但就是：我們是否會在財務、銷售、行銷等其他職能上，看到如同在寫程式領域所見到的能力躍升轉折點？因為寫程式一直以來都是最大的金礦。我認為這點說得很好。大家常討論你是否有可驗證的獎勵，而這些做起來容易，是因為許多神奇之處在於這些預訓練模型之上的強化學習（RL）。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1185s" target="_blank" rel="noopener noreferrer">19:45</a> 那正是對寫程式有所助益的關鍵。知識型工作要做到這點，看起來難得多。但話說回來，我提到的所有例子，比如客服中心、這些供應鏈系統、在這些行銷或現金到訂單（cash-to-order）系統中，我認為這是可能的，而且我們正在目睹這一點。需求是否像寫程式一樣具有彈性？我認為科學領域的需求彈性可能同樣巨大，對吧？或是整個工程領域。順便說一句，如果我現在不只看軟體開發內部正在發生的事，我們以晶片研發為例。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1219s" target="_blank" rel="noopener noreferrer">20:19</a> 那是另一個正在經歷劇烈轉變的領域，對吧？你下線投片（tape out）的速度快得多，在電腦中模擬一切的能力也大幅提升。你的第一次試產（first spin）就能完全出來—— 但即使只是維護報告的最佳化，就像你提到勞斯萊斯的例子 一個我永遠不會——這令人難以置信。我是說，這是他們長久以來一直在處理的事情。光是排程維護，而我之前沒有意識到，哇，那是個現在就能去跑的大型最佳化問題。我看過很多很多你的訪談，我們現在要進行快問快答環節。好啊。大家一直沒問過其中一些問題，而我一直想知道，我想每個人都想知道，但大家就是沒問過。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1255s" target="_blank" rel="noopener noreferrer">20:55</a> 考慮到你的出差行程，你的運動習慣是什麼，薩蒂亞？這個嘛，我是說—— 你身材保持得很好。嗯，我努力維持。我不知道是不是全都隱藏得很好。［笑聲］ 但我養成了一個習慣，這大概維持了有 25 年之久，那就是每天早上起床，我以前還能跑步。不幸的是我的膝蓋不行了，所以現在我至少會走斜坡。即使今天早上我也運動了半小時，所以無論在何處、不管時差如何，我每天都會去健身房。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1288s" target="_blank" rel="noopener noreferrer">21:28</a> 太棒了。我的膝蓋也很差。也是我這個年紀的關係。在過去 12 個月裡，你在什麼事情上改變了想法？</p>
+<h2 id="sec-15">章節 15：對齊不會自然出現（21:34）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1294s" target="_blank" rel="noopener noreferrer">21:34</a> 過去 12 個月……這可能是因為，畢竟我是最早的一批人之一，顯然當達里奧、伊利亞、山姆、格雷格和伊隆我想都還是一家親的時候，他們是真的深信擴展定律，而那也是我在 2018、2019 年時所深信的。我想我現在最大的轉變是，我過去總是認為，對齊會自然跟著出現。我不再那麼認為了。所以，我認為對齊這件事可能是一個更困難、不同的問題。</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1327s" target="_blank" rel="noopener noreferrer">22:07</a> 是的，這是我改變想法的一件事。</p>
+<h2 id="sec-16">章節 16：每家企業都是 AI 基準（22:10）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1330s" target="_blank" rel="noopener noreferrer">22:10</a> 有什麼事情在今天看來很瘋狂，但在 5 年後會變得極其普及並被普遍接受？可能就是我們剛才談到的那個東西，這些評測，對吧？每一家——什麼是企業？我認為一家企業會是一個 AI 基準。最後一個問題給你。在未來的 10 年裡，有許多令人興奮的事情。對你個人而言，就像對我來說是因為我母親患有多發性硬化症，我對未來可能實現的藥物研發感到非常興奮。你最期待的是什麼？</p>
+<h2 id="sec-17">章節 17：下個十年最期待什麼（22:36）</h2>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1357s" target="_blank" rel="noopener noreferrer">22:37</a> 我是說那非常棒，我想。我一直以來可以說都很期待的事情之一，是一項像這般強大的通用技術，而人們會說：「喔，這不只是一項普通的通用技術。」無論這到底是什麼。我希望這項技術的傳播與擴散能比任何事物都更快走向全世界，並深入經濟的各個部門，超乎以往任何事物 而且真真切切地讓全球成長的前沿發生一次真正的轉移</p>
+<p><a href="https://www.youtube.com/watch?v=24XUcWhqY_4&amp;t=1395s" target="_blank" rel="noopener noreferrer">23:15</a> 不再只是計算誰是贏家、誰是輸家，而是有點像是所有人都能獲得提升。這一直是我的夢想。事實上，我的父親曾是一位發展經濟學家，而且你知道，焦點向來都在趨同成長上。全球南方何時才能迎來能突然帶動這種成長的契機？我希望這就是答案。完全理解。這次訪談真的非常愉快。非常感謝您撥冗受訪。這是一定的。這是我的榮幸，哈利。</p>
+</article></main>
+<footer>
+<p>本頁為非官方繁體中文翻譯，依 YouTube 機器自動字幕由 AI 模型翻譯與審校，未經人工校稿，也未對照原音；原影片版權屬原頻道 20VC with Harry Stebbings，僅供閱讀與研究。若有出入，以原影片為準。</p>
+</footer>
+</div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="圖片放大檢視"><button type="button" aria-label="關閉放大檢視">關閉（Esc）</button><img src="" alt=""></div>
+<script>
+(function(){
+  var box=document.getElementById('lightbox'), big=box.querySelector('img'), btn=box.querySelector('button'), last=null;
+  function open(img){last=img;big.src=img.currentSrc||img.src;big.alt=img.alt;box.classList.add('is-open');btn.focus();}
+  function close(){box.classList.remove('is-open');big.removeAttribute('src');if(last){last.focus();}}
+  document.querySelectorAll('figure img').forEach(function(img){
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);}});
+  });
+  box.addEventListener('click',function(e){if(e.target===box||e.target===btn){close();}});
+  document.addEventListener('keydown',function(e){
+    if(!box.classList.contains('is-open'))return;
+    if(e.key==='Escape'){close();}
+    if(e.key==='Tab'){e.preventDefault();btn.focus();}
+  });
+})();
+</script>
+</body>
+</html>
